@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "npx webpack serve --mode=development",
-    "build": "npx webpack --mode=production"
+    "build": "npx webpack --mode=production",
+    "deploy": "gh-pages -d ./dist/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/three": "^0.149.0",
     "css-loader": "^6.7.3",
+    "gh-pages": "^5.0.0",
     "glslify-loader": "^2.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
